@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
         String login = req.getParameter("login");
         String password = req.getParameter("password");
 
-        if (("qwert".equals(login)) && ("password".equals(password))) {
+        if (("qwert".equals(login) || "QWERT".equals(login)) && ("password".equals(password))) {
             writer.println("Hello " + login);
 
             HttpSession session = req.getSession();
