@@ -16,6 +16,7 @@ public class BookServlet extends HttpServlet {
         List<User> users = new ArrayList<>();
         users.add(user);
         users.add(user);
+        users.add(user);
 
         req.setAttribute("users", users);
 
